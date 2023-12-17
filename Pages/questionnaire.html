@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./../main.css" type="text/css" />
+    <title>SAE.S01-Web</title>
+</head>
+<body>
+    <header>
+        <img src="../Images/tramway-lyon.png" class="image-header"/>
+        <h1>Contacts</h1>
+    </header>
+
+    <nav>
+        <img src="../Images/EcoDoua1.png" class="logo-ecodoua" alt>
+        <section class="menu-nav">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="tableau.html">Mon C02</a></li>
+                <li><a href="questionnaire.html">Contacts</a></li>
+            </ul>
+        </section>
+    </nav>
+    <main>
+        <section class="main-text">
+            <h2>Discutons dès aujourd'hui !</h2>
+            <h3>Nous nous ferons un plaisir de vous répondre !</h3>
+            <p>Bienvenue dans notre espace dédié aux échanges et à la communication. 
+                Chez Éco Doua, nous sommes ravis de pouvoir répondre à vos questions, recevoir vos commentaires ou 
+                vous assister de quelque manière que ce soit. Votre avis est précieux et nous sommes là pour vous aider.</p>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Votre statut au sein de l'université</legend>
+
+                <input type="radio" name="statut" id="etudiant">
+                <label for="etudiant">Étudiant</label>
+
+                <input type="radio" name="statut" id="personnel">
+                <label for="personnel">Personnel</label>
+
+                <input type="radio" name="statut" id="externe">
+                <label for="externe">Externe</label>
+            </fieldset>
+
+            <input placeholder="Votre Nom" aria-label="Votre Nom">
+
+            <input placeholder="Votre Prénom" aria-label="Votre Prénom">
+
+            <input placeholder="Votre Courriel" aria-label="Votre Courriel">
+
+            <input placeholder="Votre Téléphone" aria-label="Votre Téléphone"> 
+
+            <select name="type-service" id="type-service">
+                <option value="service">Service recherché</option>
+                <option value="probleme">Problème</option>
+                <option value="question">Question</option>
+            </select>
+            
+            <textarea placeholder="Votre Message" name="message" cols="10px" rows="10px"></textarea>
+        </form>
+    </main>
+
+    <aside>
+        <section class="aside-line">
+            <h2>Trouvez votre moyen de transport doux</h1>
+            <section id="logo-apps">
+                <a href="https://www.tcl.fr/"><img src="../Images/logo-tcl.png" class="logo-tcl"/></a>
+                <a href="https://www.tcl.fr/"><img src="../Images/logo-velov.svg" class="logo-velov"/></a>
+                <a href="https://www.tcl.fr/"><img src="../Images/logo-moovit.png" class="logo-moovit"/></a>
+            </section>
+        </section>        
+    </aside>
+
+    <footer>
+        <h3>Infos sites</h3>
+    </footer>
+</body>
+</html>
