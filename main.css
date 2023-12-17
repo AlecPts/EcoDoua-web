@@ -452,7 +452,7 @@ footer {
 
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 40% 90% 1fr 1fr 1fr;
+        grid-template-rows: 20% 90% 1fr 1fr 1fr;
     }
     
     
@@ -472,13 +472,13 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 1.3em;
+        font-size: 2em;
         border-bottom: 15px solid #e76f02;
         border-right: none;
     }
     
     .logo-ecodoua {
-        width: 10%;
+        width: 20%;
     }
 
     .menu-nav * {
@@ -513,7 +513,7 @@ footer {
         padding: 0.5em 0;
         grid-area: 3/1/4/2;
         background-color: white;
-        font-size: 1.3em;
+        font-size: 2em;
         line-height: 1.5em;
         padding-right: 3em;
     }
@@ -611,7 +611,7 @@ footer {
         text-align: center;
         color: black;
         padding: 1em 0;
-        font-size: 1.5em;
+        font-size: 2em;
     }
     
     #logo-apps {
@@ -624,7 +624,7 @@ footer {
     
     footer {
         grid-area: 5/1/6/2;
-        margin-top: 1em;
+        margin-top: 2em;
     }
 
 }
