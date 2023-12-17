@@ -1,0 +1,630 @@
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-header {
+    min-width: 800px;
+    width: 100%;
+}
+
+header h1 {
+    position: absolute;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 5px 5px black;
+} 
+
+nav {
+    padding: 0.8em 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3em;
+    border-right: 15px solid #e76f02;
+}
+
+.logo-ecodoua {
+    min-width: 130px;
+    margin: 0.5em 0;
+}
+
+nav label input {
+    display: none;
+}
+
+
+.menu-nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.4em;
+    transition-duration: 0.1s;
+}
+
+nav a:hover {
+    border-bottom: 5px solid #e76f02;
+    transition-duration: 0.1s;
+}
+
+
+main {
+    padding: 0.5em 0;
+    grid-area: 2/2/3/3;
+    background-color: white;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding-right: 3em;
+}
+
+main h2 {
+    margin-top: 2em;
+    color: #e3541a;
+}
+
+
+table {
+    font-size: 1em;
+    margin: 4em 0;
+    width: 95%;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+thead th{
+    padding: 1.5em;
+}
+
+thead{
+    font-size: 1em;
+    border: 2px solid black;
+}
+
+td{
+    text-align: center;
+}
+
+tr * {
+    padding: 0.5em;
+}
+
+tr:nth-of-type(2n){
+    background-color: lightgrey;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 3em 8em;
+
+}
+
+form * {
+    font-family: Trebuchet MS, sans-serif;;
+    padding: 1em 1em;
+    margin: 0.3em 0;
+    font-size: 0.9em;
+}
+
+form fieldset {
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    border-color: #757575;
+}
+
+form fieldset legend {
+    padding: 0 0.5em;
+    margin: 0 -0.5em;
+}
+
+form fieldset input:not(:nth-of-type(1)){
+    margin-left: 2em;
+}
+
+form select {
+    padding: 1em 0.8em;
+}
+
+form textarea {
+    resize: none;
+}
+
+
+aside {
+    background-color: white;
+    display: flex;
+}
+
+aside h2 {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+}
+
+#logo-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.logo-tcl {
+    margin: 5px;
+    width: 80px;
+    transition-duration: 0.2s;
+}
+
+.logo-tcl:hover {
+    margin: 0;
+    width: 90px;
+    transition-duration: 0.2s;
+}
+
+.logo-velov {
+    margin: 5px;
+    width: 100px;
+    transition-duration: 0.2s;
+}
+
+.logo-velov:hover {
+    margin: 0;
+    width: 110px;
+    transition-duration: 0.2s;
+}
+
+.logo-moovit {
+    margin: 10px;
+    width: 70px;
+    transition-duration: 0.2s;
+}
+
+.logo-moovit:hover {
+    margin: 3.5px;
+    width: 80px;
+    transition-duration: 0.2s;
+}
+
+
+footer {
+    grid-area: 3/1/4/4;
+    background-color: lightgray;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 100% 1fr 1fr;
+        height: 100vh;
+        font-family: Trebuchet MS, sans-serif;
+    }
+
+
+    header {
+        grid-area: 1/2/2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-header {
+        min-width: 800px;
+        width: 100%;
+    }
+
+    header h1 {
+        position: absolute;
+        text-align: center;
+        padding: 0 4em;
+        font-size: 3em;
+        color: white;
+        text-shadow: 0px 5px 5px black;
+    }
+
+
+    nav {
+        padding: 0.8em 2em;
+        grid-area: 1/1/2/2;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3em;
+        border-right: 15px solid #e76f02;
+    }
+
+    .logo-ecodoua {
+        min-width: 130px;
+        width: 85%;
+        margin: 0.5em 0;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav h2 {
+        color: black;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    nav ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-top: 0;
+        line-height: 3em;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 0.4em;
+        transition-duration: 0.1s;
+    }
+
+    nav a:hover {
+        border-bottom: 5px solid #e76f02;
+        transition-duration: 0.1s;
+    }
+
+
+    main {
+        padding: 0.5em 0;
+        grid-area: 2/2/3/3;
+        background-color: white;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        padding-right: 3em;
+    }
+
+    main h2 {
+        margin-top: 2em;
+        color: #e3541a;
+    }
+
+
+    table {
+        font-size: 1em;
+        margin: 4em 0;
+        width: 95%;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+
+    thead th{
+        padding: 1.5em;
+    }
+
+    thead{
+        font-size: 1em;
+        border: 2px solid black;
+    }
+
+    td{
+        text-align: center;
+    }
+
+    tr * {
+        padding: 0.5em;
+    }
+
+    tr:nth-of-type(2n){
+        background-color: lightgrey;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 3em 8em;
+
+    }
+
+    form * {
+        font-family: Trebuchet MS, sans-serif;;
+        padding: 1em 1em;
+        margin: 0.3em 0;
+        font-size: 0.9em;
+    }
+
+    form fieldset {
+        padding: 0.5em 0.8em;
+        font-size: 1em;
+        border-color: #757575;
+    }
+
+    form fieldset legend {
+        padding: 0 0.5em;
+        margin: 0 -0.5em;
+    }
+
+    form fieldset input:not(:nth-of-type(1)){
+        margin-left: 2em;
+    }
+
+    form select {
+        padding: 1em 0.8em;
+    }
+
+    form textarea {
+        resize: none;
+    }
+
+
+    aside {
+        padding: 4.5em 0;
+        grid-area: 2/3/3/4;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        line-height: 3em;
+    }
+
+    .aside-line {
+        border-left: 5px solid #e3541a;
+    }
+
+    aside h2 {
+        text-align: center;
+        color: black;
+        padding: 0 1.5em;
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    #logo-apps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        line-height: 5em;
+    }
+
+
+    .logo-tcl {
+        margin: 5px;
+        width: 80px;
+        transition-duration: 0.2s;
+    }
+
+    .logo-tcl:hover {
+        margin: 0;
+        width: 90px;
+        transition-duration: 0.2s;
+    }
+
+    .logo-velov {
+        margin: 5px;
+        width: 100px;
+        transition-duration: 0.2s;
+    }
+
+    .logo-velov:hover {
+        margin: 0;
+        width: 110px;
+        transition-duration: 0.2s;
+    }
+
+    .logo-moovit {
+        margin: 10px;
+        width: 70px;
+        transition-duration: 0.2s;
+    }
+
+    .logo-moovit:hover {
+        margin: 3.5px;
+        width: 80px;
+        transition-duration: 0.2s;
+    }
+
+
+    footer {
+        grid-area: 3/1/4/4;
+        background-color: lightgray;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40% 90% 1fr 1fr 1fr;
+    }
+    
+    
+    header {
+        grid-area: 2/1/3/2;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    
+    nav {
+        padding: 0.8em 2em;
+        grid-area: 1/1/2/2;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.3em;
+        border-bottom: 15px solid #e76f02;
+        border-right: none;
+    }
+    
+    .logo-ecodoua {
+        width: 10%;
+    }
+
+    .menu-nav * {
+        display: inline;
+        padding: 0 0.5em;
+    }
+
+    .menu-nav h2 {
+        display: none;
+    }
+
+    .menu-nav ul {
+        padding-left: 0;
+        list-style-type: none;
+        margin-right: -0.5em;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 0.4em;
+        transition-duration: 0.1s;
+    }
+    
+    nav a:hover {
+        border-bottom: 5px solid #e76f02;
+        transition-duration: 0.1s;
+    }
+    
+    
+    main {
+        padding: 0.5em 0;
+        grid-area: 3/1/4/2;
+        background-color: white;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        padding-right: 3em;
+    }
+
+    .main-text {
+        padding: 0 1.5em;
+    }
+    
+    main h2 {
+        margin-top: 2em;
+        color: #e3541a;
+    }
+    
+    
+    table {
+        font-size: 1em;
+        margin: 0 2em;
+        margin-top: 2em;
+        width: 97%;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    
+    thead th{
+        padding: 1.5em;
+    }
+    
+    thead{
+        font-size: 1em;
+        border: 2px solid black;
+    }
+    
+    td{
+        text-align: center;
+    }
+    
+    tr * {
+        padding: 0.5em;
+    }
+    
+    tr:nth-of-type(2n){
+        background-color: lightgrey;
+    }
+    
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 3em 8em;
+    
+    }
+    
+    form * {
+        font-family: Trebuchet MS, sans-serif;;
+        padding: 1em 1em;
+        margin: 0.3em 0;
+        font-size: 0.9em;
+    }
+    
+    form fieldset {
+        padding: 0.5em 0.8em;
+        font-size: 1em;
+        border-color: #757575;
+    }
+    
+    form fieldset legend {
+        padding: 0 0.5em;
+        margin: 0 -0.5em;
+    }
+    
+    form fieldset input:not(:nth-of-type(1)){
+        margin-left: 2em;
+    }
+    
+    form select {
+        padding: 1em 0.8em;
+    }
+    
+    form textarea {
+        resize: none;
+    }
+    
+    
+    aside {
+        padding: 3em 2em;
+        grid-area: 4/1/5/2;
+        flex-direction: column;
+    }
+    
+    .aside-line {
+        border-top: 5px solid #e3541a;
+    }
+    
+    aside h2 {
+        text-align: center;
+        color: black;
+        padding: 1em 0;
+        font-size: 1.5em;
+    }
+    
+    #logo-apps {
+        flex-direction: row;
+    }
+    
+    .logo-velov {
+        padding-top: 30px;
+    }
+    
+    footer {
+        grid-area: 5/1/6/2;
+        margin-top: 1em;
+    }
+
+}
