@@ -23,20 +23,6 @@ nav {
     padding: 0.8em 2em;
     background-color: white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.3em;
-    border-right: 15px solid #e76f02;
-}
-
-.logo-ecodoua {
-    min-width: 130px;
-    margin: 0.5em 0;
-}
-
-nav label input {
-    display: none;
 }
 
 
@@ -64,6 +50,10 @@ main {
 main h2 {
     margin-top: 2em;
     color: #e3541a;
+}
+
+main p {
+    padding: 0.3em 0;
 }
 
 
@@ -143,12 +133,10 @@ aside {
 aside h2 {
     text-align: center;
     color: black;
-    font-size: 1.5em;
 }
 
 #logo-apps {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -191,7 +179,6 @@ aside h2 {
 
 
 footer {
-    grid-area: 3/1/4/4;
     background-color: lightgray;
     text-align: center;
 }
@@ -199,20 +186,13 @@ footer {
 @media (min-width: 700px) {
 
     body {
-        margin: 0;
-        display: grid;
         grid-template-columns: 20% 1fr 20%;
         grid-template-rows: 100% 1fr 1fr;
-        height: 100vh;
-        font-family: Trebuchet MS, sans-serif;
     }
 
 
     header {
         grid-area: 1/2/2/4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .image-header {
@@ -221,20 +201,14 @@ footer {
     }
 
     header h1 {
-        position: absolute;
-        text-align: center;
         padding: 0 4em;
         font-size: 3em;
-        color: white;
-        text-shadow: 0px 5px 5px black;
     }
 
 
     nav {
         padding: 0.8em 2em;
         grid-area: 1/1/2/2;
-        background-color: white;
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -248,48 +222,31 @@ footer {
         margin: 0.5em 0;
     }
 
-    .hamburger {
-        display: none;
-    }
-
     nav h2 {
         color: black;
         font-size: 1.3em;
         text-align: center;
     }
 
-    nav ul {
+    .menu-nav ul {
         padding-left: 0;
-        list-style-type: none;
-        margin-top: 0;
         line-height: 3em;
     }
 
     nav a {
-        text-decoration: none;
-        color: black;
         padding: 0.4em;
-        transition-duration: 0.1s;
-    }
-
-    nav a:hover {
-        border-bottom: 5px solid #e76f02;
-        transition-duration: 0.1s;
     }
 
 
     main {
         padding: 0.5em 0;
         grid-area: 2/2/3/3;
-        background-color: white;
         font-size: 1.3em;
-        line-height: 1.5em;
         padding-right: 3em;
     }
 
     main h2 {
         margin-top: 2em;
-        color: #e3541a;
     }
 
 
@@ -364,8 +321,6 @@ footer {
     aside {
         padding: 4.5em 0;
         grid-area: 2/3/3/4;
-        background-color: white;
-        display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: left;
@@ -377,8 +332,6 @@ footer {
     }
 
     aside h2 {
-        text-align: center;
-        color: black;
         padding: 0 1.5em;
         margin: 0;
         font-size: 1.5em;
@@ -387,55 +340,14 @@ footer {
     }
 
     #logo-apps {
-        display: flex;
         flex-direction: column;
-        justify-content: space-around;
         text-align: center;
         line-height: 5em;
     }
 
 
-    .logo-tcl {
-        margin: 5px;
-        width: 80px;
-        transition-duration: 0.2s;
-    }
-
-    .logo-tcl:hover {
-        margin: 0;
-        width: 90px;
-        transition-duration: 0.2s;
-    }
-
-    .logo-velov {
-        margin: 5px;
-        width: 100px;
-        transition-duration: 0.2s;
-    }
-
-    .logo-velov:hover {
-        margin: 0;
-        width: 110px;
-        transition-duration: 0.2s;
-    }
-
-    .logo-moovit {
-        margin: 10px;
-        width: 70px;
-        transition-duration: 0.2s;
-    }
-
-    .logo-moovit:hover {
-        margin: 3.5px;
-        width: 80px;
-        transition-duration: 0.2s;
-    }
-
-
     footer {
         grid-area: 3/1/4/4;
-        background-color: lightgray;
-        text-align: center;
     }
 }
 
@@ -443,7 +355,7 @@ footer {
 
     body {
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 40% 1fr 1fr 1fr;
+        grid-template-rows: 15% 40% 1fr 1fr 1fr;
     }
     
     
@@ -452,35 +364,36 @@ footer {
     }
 
     .image-header {
-        min-width: 600px;
+        min-width: 400px;
         width: 100%;
     }
     
     header h1 {
-        font-size: 2.3em;
+        padding: 0 2em;
+        font-size: 1.5em;
     }
     
     
     nav {
-        padding: 0.8em 2em;
+        padding: 0.8em 1.1em;
         grid-area: 1/1/2/2;
         background-color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-size: 1.4em;
+        align-items: center;
+        font-size: 1em;
         border-bottom: 15px solid #e76f02;
-        border-right: none;
     }
     
     .logo-ecodoua {
         width: 20%;
-        margin-left: -0.8em;
+        margin-left: -0.2em;
     }
 
     .menu-nav * {
         display: inline;
-        padding: 0 0.4em;
+        padding-left: 0.8em;    
     }
 
     .menu-nav h2 {
@@ -489,41 +402,19 @@ footer {
 
     .menu-nav ul {
         padding-left: 0;
-        list-style-type: none;
-        margin-right: -1em;
-    }
-    
-    nav a {
-        text-decoration: none;
-        color: black;
-        transition-duration: 0.1s;
-    }
-    
-    nav a:hover {
-        border-bottom: 5px solid #e76f02;
-        transition-duration: 0.1s;
     }
     
     
     main {
         padding: 0;
         grid-area: 3/1/4/2;
-        background-color: white;
-    }
-
-    .main-text {
         padding: 0 1.5em;
-        font-size: 2em;
+        font-size: 1.2em;
         line-height: 1.5em;
-    }
-
-    .main-text p {
-        padding: 0.5em 0;
     }
     
     main h2 {
         margin-top: 2em;
-        color: #e3541a;
     }
     
     
@@ -596,9 +487,10 @@ footer {
     
     
     aside {
-        padding: 3em 2em;
+        padding: 3em 1.8em;
         grid-area: 4/1/5/2;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
     
     .aside-line {
@@ -606,18 +498,52 @@ footer {
     }
     
     aside h2 {
-        text-align: center;
-        color: black;
-        padding: 1em 0;
-        font-size: 2em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        font-size: 1.3em;
     }
     
     #logo-apps {
         flex-direction: row;
     }
     
+    .logo-tcl {
+        margin: 5px;
+        width: 60px;
+        padding-top: 7px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-tcl:hover {
+        margin: 0;
+        width: 70px;
+        transition-duration: 0.2s;
+    }
+    
     .logo-velov {
-        padding-top: 30px;
+        margin: 5px;
+        width: 80px;
+        padding-top: 22px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-velov:hover {
+        margin: 0;
+        width: 90px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-moovit {
+        margin: 10px;
+        width: 50px;
+        transition-duration: 0.2s;
+
+    }
+    
+    .logo-moovit:hover {
+        margin: 3.5px;
+        width: 60px;
+        transition-duration: 0.2s;
     }
     
     footer {
