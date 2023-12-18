@@ -28,7 +28,6 @@ header h1 {
 }
 
 nav {
-    padding: 0.8em 2em;
     background-color: white;
     display: flex;
 }
@@ -38,13 +37,13 @@ nav {
     list-style-type: none;
 }
 
-nav li a {
+.menu-nav a {
     text-decoration: none;
     color: black;
     transition-duration: 0.1s;
 }
 
-nav li a:hover {
+.menu-nav a:hover {
     border-bottom: 5px solid #e76f02;
     transition-duration: 0.1s;
 }
@@ -374,9 +373,8 @@ footer {
     
     
     nav {
-        padding: 0.8em 1.1em;
+        padding: 0 1em;
         grid-area: 1/1/2/2;
-        background-color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -390,20 +388,15 @@ footer {
         margin-left: -0.2em;
     }
 
-    .menu-nav * {
-        display: inline;
-        padding-left: 0.8em;    
-    }
-
     .menu-nav h2 {
         display: none;
     }
 
-    .menu-nav ul {
-        padding-left: 0;
+    .menu-nav * {
+        display: inline;
+        padding-left: 0.8em;
     }
-    
-    
+
     main {
         padding: 0;
         grid-area: 3/1/4/2;
