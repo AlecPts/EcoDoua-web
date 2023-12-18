@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./../main.css" type="text/css" />
+    <link rel="stylesheet" href="./../main.css" type="text/css">
     <title>SAE.S01-Web</title>
 </head>
 <body>
     <header>
-        <img src="../Images/tramway-lyon.png" class="image-header"/>
+        <img src="../images/tramway-lyon.png" class="image-header" alt="Tramway TCL">
         <h1>Mon émission de C02</h1>
     </header>
 
     <nav>
-        <img src="../Images/EcoDoua1.png" class="logo-ecodoua" alt>
+        <a href="../index.html"><img src="../images/EcoDoua1.png" class="logo-ecodoua" alt></a>
         <section class="menu-nav">
             <h2>Navigation</h2>
             <ul>
@@ -40,6 +40,8 @@
                 <tr>
                     <th>Type de moyen de transport</th>
                     <th>Distance parcourue (en km)</th>
+                    <th>Distance parcourue (en km)</th>
+                    <th>Emission moyenne de CO2 (en kg)</th>
                     <th>Emission moyenne de CO2 (en kg)</th>
                 </tr>
             </thead>
@@ -48,11 +50,11 @@
                     <th>Vélo</th>
                     <td>10 km parcourue</td>
                     <td>10</td>
-                    <td>0 kg de CO2 émit </td>
+                    <td>0 kg de CO2 émit</td>
                     <td>0</td>
                 </tr>
                 <tr>
-                    <th>Vélo électrique</th>
+                    <th >Vélo électrique</th>
                     <td>10 km parcourue</td>
                     <td>10</td>
                     <td>0.1 kg de CO2 émit</td>
@@ -141,12 +143,12 @@
 
     <aside>
         <section class="aside-line">
-            <h2>Trouvez votre moyen de transport doux</h1>
-            <section id="logo-apps">
-                <a href="https://www.tcl.fr/"><img src="../Images/logo-tcl.png" class="logo-tcl"/></a>
-                <a href="https://www.tcl.fr/"><img src="../Images/logo-velov.svg" class="logo-velov"/></a>
-                <a href="https://www.tcl.fr/"><img src="../Images/logo-moovit.png" class="logo-moovit"/></a>
-            </section>
+            <h2>Trouvez votre moyen de transport doux</h2>
+            <div id="logo-apps">
+                <a href="https://www.tcl.fr/"><img src="../images/logo-tcl.png" class="logo-tcl" alt="Logo TCL"></a>
+                <a href="https://velov.grandlyon.com/fr/mapping"><img src="../images/logo-velov.svg" class="logo-velov" alt="Logo Vélo'v"></a>
+                <a href="https://moovitapp.com/lyon-3483/poi/fr"><img src="../images/logo-moovit.png" class="logo-moovit" alt="Logo MoovIt"></a>
+            </div>
         </section>        
     </aside>
 
