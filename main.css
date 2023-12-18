@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: grid;
     height: 100vh;
-    font-family: Trebuchet MS, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -38,13 +38,13 @@ nav {
     list-style-type: none;
 }
 
-nav a {
+nav li a {
     text-decoration: none;
     color: black;
     transition-duration: 0.1s;
 }
 
-nav a:hover {
+nav li a:hover {
     border-bottom: 5px solid #e76f02;
     transition-duration: 0.1s;
 }
@@ -85,13 +85,11 @@ tr:nth-of-type(2n){
 form {
     display: flex;
     flex-direction: column;
-    
 }
 
 form * {
-    font-family: Trebuchet MS, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
 }
-
 
 fieldset, input, select, textarea {
     border: 2px solid #979494;
@@ -99,6 +97,18 @@ fieldset, input, select, textarea {
 
 form textarea {
     resize: none;
+}
+
+form button {
+    background-color: #e76f02;
+    border: 3px solid #e76f02;
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: white;
+    transition-duration: 0.3s;
 }
 
 
@@ -241,7 +251,7 @@ footer {
         border-collapse: collapse;
     }
 
-    tbody tr :nth-of-type(odd):not(th) {
+    thead tr :nth-of-type(odd):not(th:first-of-type), tbody tr :nth-of-type(odd):not(th:first-of-type) {
         display: none;
     }
 
@@ -275,7 +285,6 @@ footer {
     }
 
     form * {
-        font-family: Trebuchet MS, sans-serif;;
         padding: 1em 1em;
         margin: 0.3em 0;
         font-size: 0.9em;
@@ -304,12 +313,15 @@ footer {
         resize: none;
     }
 
+    form button {
+        margin: 0.4em 8em;
+    }
+
 
     aside {
         padding: 4.5em 0;
         grid-area: 2/3/3/4;
         flex-direction: column;
-        align-items: left;
         justify-content: left;
         line-height: 3em;
     }
@@ -469,7 +481,7 @@ footer {
     form select {
         padding: 1em 0.8em;
     }
-    
+
     
     aside {
         padding: 3em 1.8em;
