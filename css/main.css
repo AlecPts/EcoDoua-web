@@ -2,7 +2,7 @@ body {
     margin: 0;
     display: grid;
     height: 100vh;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -51,7 +51,7 @@ nav {
 
 main {
     background-color: white;
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 
 main h2 {
@@ -80,6 +80,14 @@ tr:nth-of-type(2n){
     background-color: lightgrey;
 }
 
+table + p {
+    color: #4a4949;
+}
+
+table + p a {
+    color: #4a4949;
+}
+
 
 form {
     display: flex;
@@ -87,11 +95,23 @@ form {
 }
 
 form * {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 fieldset, input, select, textarea {
     border: 2px solid #979494;
+}
+
+form fieldset div {
+    display: flex;
+    padding: 0;
+    line-height: 0;
+}
+
+form fieldset div input {
+    margin-right: 0.8em;
+    margin-left: -0.5em;
+    margin-top: 0;
 }
 
 form textarea {
@@ -202,11 +222,6 @@ footer > p {
 }
 
 
-caption {
-    background-color: black;
-}
-
-
 @media (min-width: 700px) {
 
     body {
@@ -264,6 +279,7 @@ caption {
 
     main {
         padding: 0.5em 0;
+        margin-bottom: 3em;
         grid-area: 2/2/3/3;
         font-size: 1.3em;
         padding-right: 3em;
@@ -282,7 +298,7 @@ caption {
 
     table {
         font-size: 1em;
-        margin: 4em 0;
+        margin-top: 3em;
         width: 95%;
         border: 2px solid black;
         border-collapse: collapse;
@@ -318,7 +334,7 @@ caption {
         display: flex;
         flex-direction: column;
         margin: 3em 8em;
-
+        margin-bottom: 1em;
     }
 
     form * {
@@ -340,6 +356,10 @@ caption {
 
     form fieldset input:not(:nth-of-type(1)){
         margin-left: 2em;
+    }
+
+    form fieldset div {
+        flex-direction: row;
     }
 
     form select {
@@ -443,7 +463,6 @@ caption {
     
     caption {
         font-size: 0.5em;
-        background-color: black;
     }
 }
 
@@ -492,7 +511,7 @@ caption {
 
     .menu-nav * {
         display: inline;
-        padding-left: 0.8em;
+        margin-left: 0.5em;
     }
 
     main {
@@ -500,11 +519,12 @@ caption {
         grid-area: 3/1/4/2;
         padding: 0 1.5em;
         font-size: 1.8em;
-        line-height: 1.5em;
+        line-height: 1.7em;
     }
     
     main h2 {
         margin-top: 2em;
+        line-height: 1.2em;
     }
     
     
@@ -542,6 +562,11 @@ caption {
     td {
         padding: 0.4em 0;
     }
+
+    table + p {
+        font-size: 0.7em;
+        text-align: center;
+    }
     
     
     form {
@@ -564,9 +589,9 @@ caption {
         padding: 0 0.5em;
         margin: 0 -0.5em;
     }
-    
-    form fieldset input:not(:nth-of-type(1)){
-        margin-left: 2em;
+
+    form fieldset div {
+        flex-direction: column;
     }
     
     form select {
@@ -576,6 +601,7 @@ caption {
     
     aside {
         padding: 3em 1.8em;
+        margin-top: 4em;
         grid-area: 4/1/5/2;
         flex-direction: row;
         justify-content: center;
@@ -651,4 +677,51 @@ caption {
         font-size: 0.5em;
     }
 
+}
+
+
+@media (min-width: 2560px) and (min-height: 1440px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .logo-tcl {
+        margin: 5px;
+        width: 100px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-tcl:hover {
+        margin: 0;
+        width: 110px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-velov {
+        margin: 5px;
+        width: 120px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-velov:hover {
+        margin: 0;
+        width: 130px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-moovit {
+        margin: 10px;
+        width: 90px;
+        transition-duration: 0.2s;
+    }
+    
+    .logo-moovit:hover {
+        margin: 3.5px;
+        width: 100px;
+        transition-duration: 0.2s;
+    }
+
+    #icone-apps * {
+        width: 20px;
+    }
 }
